@@ -1,4 +1,3 @@
-<%@ page import="models.Task" %>
 <%@ page import="java.util.List" %>
 <%@ page import="models.User" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -36,6 +35,7 @@ Add user: | <a href="/logout">Logout</a><br>
     </tr>
     <tr style="border: 1px solid black;">
         <%
+
             List<User> users = (List<User>) request.getAttribute("users");
             if (users != null && !users.isEmpty()) {
                 for (User user : users) {

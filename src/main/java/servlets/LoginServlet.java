@@ -28,6 +28,7 @@ public class LoginServlet extends HttpServlet {
             resp.sendRedirect("/");
         } else {
             if (user.getType().name().equalsIgnoreCase("Manager")) {
+                req.getSession().setAttribute("user", user);
                 resp.sendRedirect("/adm");
             } else {
                 req.getSession().setAttribute("user", user);

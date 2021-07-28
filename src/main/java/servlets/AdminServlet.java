@@ -1,8 +1,5 @@
 package servlets;
-
-import managers.TaskManager;
 import managers.UserManager;
-import models.Task;
 import models.User;
 
 import javax.servlet.ServletException;
